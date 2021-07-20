@@ -16,18 +16,18 @@ app.use(express.urlencoded({
   extended: true
 }))
 
-// https
-//   .createServer(
-//     {
-//       key: fs.readFileSync('/etc/letsencrypt/live/thelounge.casino-0001/privkey.pem'),
-//       cert: fs.readFileSync('/etc/letsencrypt/live/thelounge.casino-0001/fullchain.pem'),
-//       ca: fs.readFileSync('/etc/letsencrypt/live/thelounge.casino-0001/fullchain.pem'),
-//     },
-//     app
-//   )
-//   .listen(443, () => {
-//     console.log('Listening...')
-//   })
+https
+  .createServer(
+    {
+      key: fs.readFileSync('/etc/letsencrypt/live/hashery.io/privkey.pem'),
+      cert: fs.readFileSync('/etc/letsencrypt/live/hashery.io/fullchain.pem'),
+      ca: fs.readFileSync('/etc/letsencrypt/live/hashery.io/fullchain.pem'),
+    },
+    app
+  )
+  .listen(443, () => {
+    console.log('Listening...')
+  })
 
 
 app.get('/', (req, res) => {
