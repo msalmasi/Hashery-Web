@@ -11,6 +11,18 @@ body {
 	background-color: #1e1d1d;
 }
 
-h1 {
+.logo {
+	width: 13rem;
+	height: auto;
+}
+
+.hero {
 	color: #ecd33a;
+	font-family: "Times New Roman";
+	font-size: 6rem;
+}
+
+hr {
+	border-color: #ecd33a;
+	background-color: #ecd33a;
 }
